@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Excercise</title>
+    <script src="quadratic.js"></script>
+    <script src="cubic.js"></script>
+    <script src="equations.js"></script>
+    <script src="binary_search.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<!-- Quadratic-->
+<div class="accordion container" style="padding: 1rem; " id="accordionExample">
+    <div class="accordion-item ">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Quadratic
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p>Please enter the coefficients <strong>a</strong>, <strong>b</strong> and <strong>c</strong> of a quadratic equation of the form <strong>ax&#x00B2; + bx + c = 0</strong></p>
+    
+                <form name="input_form" action="javascript:quadratic();">
+                    a: <input type="text" name="aterm" size="5" required>
+                    b: <input type="text" name="bterm" size="5" required>
+                    c: <input type="text" name="cterm" size="5" required>
+                    <br><br>
+                    <input  class="btn btn-primary" type="submit" value="quadratic">
+                </form>
+                            <p id="output_text"></p>
+         </div>
+      </div>
+    </div>
+
+    <!-- Cubic-->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Cubic
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p>Please enter number <strong>a</strong>, <strong>b</strong>,  and <strong>c</strong> of a cubic equation of the form <strong>ax&#x00B3; + bx&#x00B2; + cx + d = 0</strong></p>
+    
+            <form name="input_form1" action="javascript:cubic();">
+                a: <input type="text" name="a" size="5" required>
+                b: <input type="text" name="b" size="5" required>
+                c: <input type="text" name="c" size="5" required>
+                d: <input type="text" name="d" size="5" required>
+                <br><br>
+                <input class="btn btn-secondary" type="submit" value="cubic">
+            </form>
+            
+            <p id="output_text1"> </p> 
+        </div>
+      </div>
+    </div>
+
+    <!--Equations-->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Equations
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p>Please enter number of a equation of the form <img src="equation.PNG" ></p>
+    
+            <form name="input_form2" action="javascript:equation();">
+                a1: <input type="text" name="a1" size="5" required>
+                b1: <input type="text" name="b1" size="5" required>
+                c1: <input type="text" name="c1" size="5" required>
+                a2: <input type="text" name="a2" size="5" required>
+                b2: <input type="text" name="b2" size="5" required>
+                c2: <input type="text" name="c2" size="5" required>
+                
+                <br><br>
+                <input class="btn btn-success" type="submit" value="equation">
+            </form>
+            
+            <p id="output_text2"> </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Binary Search-->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+            Binary Search
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              <p>Please enter number from 0 to 10</p>
+      
+              <form name="input_form3" action="javascript:binarySearch();">
+                  
+                  Binary Search: <input type="text" name="val" size="5" required>
+                  
+                  
+                  <br><br>
+                  <input class="btn btn-success" type="submit" value="Search">
+              </form>
+              
+              <p id="output_text3"> </p>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
