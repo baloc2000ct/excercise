@@ -37,3 +37,7 @@ function binarySearch(){
      
      
 }
+
+// binarySearch();
+
+

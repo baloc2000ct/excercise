@@ -3,9 +3,9 @@ function quadratic() {
 let valid1, valid2;
 var outputText;
 //input a, b, c
-let a = document.forms["input_form"]["aterm"].value;
-let b = document.forms["input_form"]["bterm"].value;
-let c = document.forms["input_form"]["cterm"].value;;
+let a =parseInt (document.forms["input_form"]["aterm"].value);
+let b = parseInt (document.forms["input_form"]["bterm"].value);
+let c = parseInt (document.forms["input_form"]["cterm"].value);
 
 //delta
 let delta = b * b - 4 * a * c ;
@@ -31,4 +31,4 @@ else
 }
 document.getElementById("output_text").innerHTML = outputText;
 }
-quadratic();
+

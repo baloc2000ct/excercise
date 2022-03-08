@@ -3,10 +3,10 @@ function cubic()
 var valid1, valid2, valid3;
 var outputText;
 //input a, b, c, d
-var a = document.forms["input_form1"]["a"].value;
-var b = document.forms["input_form1"]["b"].value;
-var c = document.forms["input_form1"]["c"].value;
-var d = document.forms["input_form1"]["d"].value;
+var a =parseInt ( document.forms["input_form1"]["a"].value);
+var b =parseInt ( document.forms["input_form1"]["b"].value);
+var c =parseInt ( document.forms["input_form1"]["c"].value);
+var d =parseInt ( document.forms["input_form1"]["d"].value);
 
 //delta
 var delta = b * b - 3 * a * c ;
@@ -67,4 +67,3 @@ else
 }
 document.getElementById("output_text1").innerHTML = outputText;
 }
-cubic();
